@@ -1,0 +1,19 @@
+build:
+  environment:
+    node:
+      version: 12.11.1
+  nodes:
+    analysis:
+      tests:
+        override:
+          - yarn lint
+          - yarn lint:css
+          - js-scrutinizer-run
+          - command: "CI=true yarn test:coverage"
+            coverage:
+              file: "coverage/clover.xml"
+              format: "clover"
+  tests:
+    before:
+      - command: yarn build
+        idle_timeout: 5000
