@@ -7,6 +7,7 @@ const nextConfig = {
     transpileOnly: true, // same as ts-node --transpile-only
   },
   ignoreBuildErrors: true,
+  swcMinify: true,
 };
 
 module.exports = nextConfig;
