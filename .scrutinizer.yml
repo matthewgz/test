@@ -1,7 +1,7 @@
 build:
   environment:
     node:
-      version: 14.17.5
+      version: 16.15.0
   nodes:
     analysis:
       tests:
