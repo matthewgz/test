@@ -8,3 +8,7 @@ build:
         override:
           - yarn lint
           - js-scrutinizer-run
+  tests:
+    before:
+      - command: yarn build
+        idle_timeout: 5000
