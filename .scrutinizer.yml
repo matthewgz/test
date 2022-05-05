@@ -11,4 +11,4 @@ build:
   tests:
     before:
       - command: yarn build
-        idle_timeout: 5000
+        idle_timeout: 10000
