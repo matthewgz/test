@@ -2,6 +2,7 @@ build:
   environment:
     node:
       version: 16.15.0
+  image: default-bionic
   nodes:
     analysis:
       tests:
